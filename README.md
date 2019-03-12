@@ -19,4 +19,6 @@ LeetCode中文网：[https://leetcode-cn.com/](https://leetcode-cn.com/)
 - 盛最多水的容器（Solution201903091）  
 [https://leetcode-cn.com/problems/container-with-most-water/](https://leetcode-cn.com/problems/container-with-most-water/)
 -  整数转罗马数字（Solution201903101）  
-[https://leetcode-cn.com/problems/integer-to-roman/](https://leetcode-cn.com/problems/integer-to-roman/)
+[https://leetcode-cn.com/problems/integer-to-roman/](https://leetcode-cn.com/problems/integer-to-roman/)  
+-  三数之和（Solution201903121）  
+[https://leetcode-cn.com/problems/3sum/](https://leetcode-cn.com/problems/3sum/)
