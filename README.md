@@ -4,21 +4,15 @@
 LeetCode中文网：[https://leetcode-cn.com/](https://leetcode-cn.com/)
 
 ## 2019-03
-- 两数相加（Solution201903021）  
-[https://leetcode-cn.com/problems/add-two-numbers/solution/](https://leetcode-cn.com/problems/add-two-numbers/solution/)
-- 两个有序数组(从小到大)的中位数（Solution201903031）  
-- 最长不重复子串（Solution201903041）  
-[https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
-- 最长回文串长度（Solution201903051）  
-[https://leetcode-cn.com/problems/longest-palindromic-substring/submissions/](https://leetcode-cn.com/problems/longest-palindromic-substring/submissions/)
-- z字形排列（Solution201903071）  
-[https://leetcode-cn.com/problems/zigzag-conversion/](https://leetcode-cn.com/problems/zigzag-conversion/)  
-此题是一个规律题，Z字形排列下来，读下一个值是能通过公式计算出来的.
-- 字符串转换整数（Solution201903081）  
-[https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/](https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/)  
-- 盛最多水的容器（Solution201903091）  
-[https://leetcode-cn.com/problems/container-with-most-water/](https://leetcode-cn.com/problems/container-with-most-water/)
--  整数转罗马数字（Solution201903101）  
-[https://leetcode-cn.com/problems/integer-to-roman/](https://leetcode-cn.com/problems/integer-to-roman/)  
--  三数之和（Solution201903121）  
-[https://leetcode-cn.com/problems/3sum/](https://leetcode-cn.com/problems/3sum/)
+
+| Title|Solution | Time | Space 
+| ---- |-------- | -----| -----
+[两数相加](https://leetcode-cn.com/problems/add-two-numbers/solution/) | [Solution201903021](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903021.java) | |  
+[最长不重复子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [Solution201903041](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903041.java) | |  
+[最长回文串长度](https://leetcode-cn.com/problems/longest-palindromic-substring/submissions/) | [Solution201903051](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903051.java) | |  
+[z字形排列](https://leetcode-cn.com/problems/add-two-numbers/solution/) | [Solution201903071](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903071.java) | |  
+[字符串转换整数](https://leetcode-cn.com/problems/string-to-integer-atoi/submissions/)  | [Solution201903081](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903081.java)| |  
+[盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [Solution201903091](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903091.java) | |  
+[整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) | [Solution201903101](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903101.java) | |  
+[三数之和](https://leetcode-cn.com/problems/3sum/) | [Solution201903121](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903121.java) | |  
+[最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest/comments/) | [Solution201903141](../master/src/main/java/top/amazingwu/blog/solution201903/Solution201903141.java) | O(N^2) | O(1)   
