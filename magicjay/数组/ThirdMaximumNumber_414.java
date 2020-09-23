@@ -7,6 +7,8 @@ import org.omg.PortableInterceptor.INACTIVE;
  * @version 1.0
  * @date 2020/9/22
  * @description 第三大的数
+ * 方法1 遍历一次，存三个变量
+ * 方法2 遍历三次，存三个变量
  * 给定一个非空数组，返回此数组中第三大的数。如果不存在，则返回数组中最大的数。要求算法时间复杂度必须是O(n)。
  * <p>
  * 示例 1:
@@ -47,29 +49,42 @@ public class ThirdMaximumNumber_414 {
         int tmp1 = Integer.MIN_VALUE;
         int tmp2 = Integer.MIN_VALUE;
         int tmp3 = Integer.MIN_VALUE;
+        int factLen = nums.length;
+        boolean flag = false;
         for (int val : nums) {
-//            if (val != tmp1 && val != tmp2 && val != tmp3) {
-                if (val > tmp1) {
-                    tmp3 = tmp2;
-                    tmp2 = tmp1;
-                    tmp1 = val;
-                } else if (val < tmp1 && val > tmp2) {
-                    tmp3 = tmp2;
-                    tmp2 = val;
-                } else if (val < tmp2 && val > tmp3) {
-                    tmp3 = val;
-                }
-//            }
+            //如果第一次不跳过绝对最小值，[1, 2, -2147483648]，因为tmp三个数初始化都是绝对最小值，会被认作数组只有1，2两个元素，这样factLen为2，
+            //就取最大的那个数2了。
+            if (val == Integer.MIN_VALUE && !flag) {
+                flag = true;
+                continue;
+            }
+            //为了防止没有绝对最小值的重复元数组且该数组长度小于3的case出现，比如[1,1,2] 的这种情况。
+            if (val == tmp1 || val == tmp2 || val == tmp3) {
+                //反正我要的是前三个大的数
+                factLen--;
+                continue;
+            }
+
+            if (val > tmp1) {
+                tmp3 = tmp2;
+                tmp2 = tmp1;
+                tmp1 = val;
+            } else if (val < tmp1 && val > tmp2) {
+                tmp3 = tmp2;
+                tmp2 = val;
+            } else if (val < tmp2 && val > tmp3) {
+                tmp3 = val;
+            }
         }
-        if (tmp3 == Integer.MIN_VALUE)
-            return tmp1;
-        return tmp3;
+        //<3说明没有第三大的元素就返回最大的元素
+        return factLen >= 3 ? tmp3 : tmp1;
     }
 
     public static void main(String[] args) {
         ThirdMaximumNumber_414 tm = new ThirdMaximumNumber_414();
-        int[] nums = {1,2,-2147483648};
+        int[] nums = {1, 2, -2147483648};
+//        int[] nums = {1,2,2};
         System.out.println(tm.thirdMax(nums));
-        System.out.println(Integer.MIN_VALUE);
+//        System.out.println(Integer.MIN_VALUE);
     }
 }
